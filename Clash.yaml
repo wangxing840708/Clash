@@ -147,4 +147,4 @@ ProxyGroup:
 
 Rule:
   # 加载远程规则，仅支持一个远程规则
-  source: https://gist.github.com/GeekQu
+  source: https://gist.github.com/GeekQu/6fdb445a02035ed972c360e3511fa113/raw/Rule.yaml

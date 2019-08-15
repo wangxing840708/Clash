@@ -148,6 +148,6 @@ ProxyGroup:
 Rule:
   # 加载远程规则，仅支持一个远程规则
   # 使用神机规则或从其他完整配置中获取规则，需为标准 YAML 格式
-  source: https://github.com/ConnersHua/Profiles/raw/master/Clash/Pro.yaml
+  # source: https://github.com/ConnersHua/Profiles/raw/master/Clash/Pro.yaml
   # 或自行提供规则
-  # source: https://gist.github.com/GeekQu/6fdb445a02035ed972c360e3511fa113/raw/Rule.yaml
+  source: https://gist.github.com/GeekQu/6fdb445a02035ed972c360e3511fa113/raw/Rule.yaml

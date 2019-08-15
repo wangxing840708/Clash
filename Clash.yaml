@@ -34,7 +34,7 @@ Proxy:  # 添加额外节点，但请注意，ProxyGroup 中所有的筛选并�
   plugin-opts:
     mode: tls # or http
     # host: bing.com
-- { name: "韩国自建 2", type: vmess, server: server, port: 443, uuid: uuid, alterId: 32, cipher: auto }
+- { name: "韩国自建 2", type: vmess, server: server, port: 443, uuid: 2661b5f8-8062-34a5-9371-a44313a75b6d, alterId: 32, cipher: auto }
 
 ProxyGroup:
 - name: '香港'

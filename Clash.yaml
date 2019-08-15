@@ -41,7 +41,7 @@ ProxyGroup:
   type: url-test
   content:  # 从 3 级的节点中筛选香港节点
     class: 3
-    regex: '/(香港)/i'
+    regex: '(香港)'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
 
@@ -49,35 +49,35 @@ ProxyGroup:
   type: url-test
   content:  # 从非 0 级的节点中筛选日本节点
     noclass: 0
-    regex: '/(日本)/i'
+    regex: '(日本)'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
 
 - name: '坡坡'
   type: url-test
   content:  # 从所有节点中筛选新加坡节点
-    regex: '/(新加坡)/i'
+    regex: '(新加坡)'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
 
 - name: '美国'
   type: url-test
   content:
-    regex: '/(美国)/i'
+    regex: '(美国)'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
 
 - name: '台湾'
   type: url-test
   content:
-    regex: '/(台湾)/i'
+    regex: '(台湾)'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
 
 - name: '韩国'
   type: url-test
   content:  # 从所有节点中筛选韩国节点，并在最后加上 right-proxies 中的节点
-    regex: '/(韩国)/i'
+    regex: '(韩国)'
     right-proxies:
       - '韩国自建 1'
       - '韩国自建 2'
@@ -87,7 +87,7 @@ ProxyGroup:
 - name: '中继'
   type: url-test
   content:
-    regex: '/(中国|回国)/i'
+    regex: '(中国|回国)'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
 

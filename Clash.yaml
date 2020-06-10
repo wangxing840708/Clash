@@ -128,4 +128,4 @@ ProxyGroup:
       - DIRECT
       - REJECT
 Rule:
-source: https://gist.github.com/GeekQu/6fdb445a02035ed972c360e3511fa113/raw/Rule.yaml
+source: https://github.com/wangxing840708/Clash/blob/master/Rule.yaml

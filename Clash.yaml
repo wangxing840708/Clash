@@ -39,7 +39,7 @@ Proxy:  # 添加额外节点，但请注意，ProxyGroup 中所有的筛选并�
 ProxyGroup:
 - name: '香港'
   type: url-test
-  content:  # 从 3 级的节点中筛选香港节点
+  content:  
     regex: '(香港)'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
@@ -82,8 +82,6 @@ ProxyGroup:
       - '韩国自建 2'
   url: http://www.qualcomm.cn/generate_204
   interval: 3600
-
-
 - name: "PROXY"
   type: select
   content:
@@ -94,15 +92,12 @@ ProxyGroup:
       - '台湾'
       - '美国'
       - '韩国'
-      - '中继'
-
 - name: "Final"
   type: select
   content:
     left-proxies:
       - "PROXY"
       - "DIRECT"
-
 - name: "ForeignMedia"
   type: select
   content:
@@ -114,33 +109,23 @@ ProxyGroup:
       - '台湾'
       - '美国'
       - '韩国'
-
-
 - name: "DomesticMedia"
   type: select
   content:
     left-proxies:
       - DIRECT
       - PROXY
-
-
 - name: "Apple"
   type: select
   content:
     left-proxies:
       - DIRECT
       - PROXY
-
 - name: "Hijacking"
   type: select
   content:
     left-proxies: 
       - DIRECT
       - REJECT
-
 Rule:
-  # 加载远程规则，仅支持一个远程规则
-  # 使用神机规则或从其他完整配置中获取规则，需为标准 YAML 格式
-  # source: https://github.com/ConnersHua/Profiles/raw/master/Clash/Pro.yaml
-  # 或自行提供规则
-  source: https://gist.github.com/GeekQu/6fdb445a02035ed972c360e3511fa113/raw/Rule.yaml
+source: https://gist.github.com/GeekQu/6fdb445a02035ed972c360e3511fa113/raw/Rule.yaml
